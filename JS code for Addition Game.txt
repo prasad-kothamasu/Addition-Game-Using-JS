@@ -1,0 +1,24 @@
+let resultpara = document.getElementById("gameResult");
+
+function checkButtonwork() {
+    let userInputValue = parseInt(document.getElementById("userInput").value);
+    let first = parseInt(document.getElementById("firstNumber").textContent);
+    let second = parseInt(document.getElementById("secondNumber").textContent);
+    if ((first + second) === userInputValue) {
+        resultpara.textContent = "Congratulations!";
+        resultpara.style.backgroundColor = "#028a0f";
+    } else {
+        resultpara.textContent = "Please Try Again";
+        resultpara.style.backgroundColor = "#1e217c";
+    }
+}
+
+function restartButtonwork() {
+    let number1 = document.getElementById("firstNumber");
+    let number2 = document.getElementById("secondNumber");
+    number1.textContent = Math.ceil(Math.random() * 100);
+    number2.textContent = Math.ceil(Math.random() * 100);
+    document.getElementById("userInput").value = "";
+    resultpara.textContent = "";
+    resultpara.style.backgroundColor = "transparent";
+}
