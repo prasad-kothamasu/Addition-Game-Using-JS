@@ -1,4 +1,4 @@
-# Sum of Two Numbers Game 🧠➕
+# Sum of Two Numbers Game ➕
 
 A simple and interactive web-based game where users are challenged to solve a basic addition problem. Built using **HTML**, **CSS**, and **JavaScript** to strengthen mental math skills in a fun way.
 
